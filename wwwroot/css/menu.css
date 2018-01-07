@@ -1,0 +1,43 @@
+body {
+    background-image: url("/images/bg.png");
+    min-height: 708px;
+    min-width: 1280px;
+    color: #FF9800;
+    font-family: 'Lobster';
+    margin: 12px 0 0 24px;
+}
+
+.beer {
+    font-size: 2.7em;
+    margin-bottom: 6px;
+}
+
+.beer-condenced {
+    font-size: 2.6em;
+}
+
+.header {
+    font-size: 4.5em;
+}
+
+.header-right {
+    float: right;
+    margin: 0 64px 6px 24px;
+    font-size: 6em;
+    text-align: right;
+}
+
+.name {
+    display: inline-block;
+}
+
+.comment {
+    display: inline-block;
+    margin-left: 8px;
+    color: #CDDC39;
+}
+
+.price {
+    display: inline-block;
+    margin-left: 8px;
+}

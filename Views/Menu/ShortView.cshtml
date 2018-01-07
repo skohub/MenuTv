@@ -1,0 +1,15 @@
+@model IEnumerable<Beer>
+
+<div class="header font-effect-splintered">Пиво</div>
+
+@foreach(var beer in Model)
+{
+    <div class="beer font-effect-splintered">
+        <div class="name">@beer.Name</div>
+        @if(beer.Comment != null && beer.Comment != "")
+        {
+            <div class="comment">@beer.Comment</div>
+        }
+        <div class="price">@beer.Price р.</div>
+    </div>
+}

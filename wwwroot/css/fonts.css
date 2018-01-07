@@ -1,0 +1,28 @@
+/* lobster-regular - cyrillic_latin */
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/lobster-v20-cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Lobster Regular'), local('Lobster-Regular'),
+         url('/fonts/lobster-v20-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/lobster-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/lobster-v20-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/lobster-v20-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/lobster-v20-cyrillic_latin-regular.svg#Lobster') format('svg'); /* Legacy iOS */
+}
+
+.font-effect-shadow-multiple {
+    text-shadow: .04em .04em 0 #fff,.08em .08em 0 #aaa;
+    -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+  }
+
+  .font-effect-brick-sign {
+    -webkit-mask-image: url(/images/brick-sign.png);
+    color: #FF9800;
+  }
+
+  .font-effect-splintered {
+    -webkit-mask-image: url(/images/splintered.png);
+    color: #FF9800;
+  }
