@@ -17,14 +17,7 @@ namespace MenuTv.Controllers
         public IActionResult Index()
         {
             var beers = _repo.FindAvailable();
-            if (beers.Count() <= 10) 
-            {
-                return View("ShortView", beers);
-            } 
-            else 
-            {
-                return View("LongView", beers);
-            }
+            return View(beers);
         }
     }
 }

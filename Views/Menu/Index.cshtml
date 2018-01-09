@@ -1,0 +1,58 @@
+@model IEnumerable<Beer>
+
+@{
+    var left = Model.Take(6);
+    var right = Model.Skip(6).Take(6);
+}
+
+<div>
+    
+    <div style="text-align: center">
+        <span class="header font-effect-splintered">Пиво</span>
+        <img class="header-image" src="/images/beers.png"/>
+    </div>
+</div>
+
+<div class="beer-container">
+    <div class="row font-effect-splintered">
+        <div class="col-md-6 col-left">
+            <table>
+                @foreach(var beer in left)
+                {
+                    <tr>
+                        <td>
+                            <div class="description">
+                                <div class="name">@beer.Name</div>
+                                @if(beer.Comment != null && beer.Comment != "")
+                                {
+                                    <div class="comment">@beer.Comment</div>
+                                }
+                            </div>
+                        </td>
+                        <td width="100%"><div class="price">@beer.Price р.</div></td>
+                    </tr>
+                }
+            </table>
+        </div>
+
+        <div class="col-md-6 col-right">
+            <table>
+                @foreach(var beer in right)
+                {
+                    <tr>
+                        <td>
+                            <div class="description">
+                                <div class="name">@beer.Name</div>
+                                @if(beer.Comment != null && beer.Comment != "")
+                                {
+                                    <div class="comment">@beer.Comment</div>
+                                }
+                            </div>
+                        </td>
+                        <td width="100%"><div class="price">@beer.Price р.</div></td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>

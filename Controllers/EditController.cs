@@ -85,7 +85,7 @@ namespace MenuTv.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("Id,Name,Comment,Price,Enabled")] Beer beer)
+        public IActionResult Edit(int id, [Bind("Id,Name,Comment,Price,Available")] Beer beer)
         {
             if (id != beer.Id)
             {
